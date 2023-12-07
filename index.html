@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tetris by Jeff de Lara</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div>
+                <canvas tabindex="1" id="canvas"></canvas>
+                <div id="canvas-container"></div>
+            </div>
+
+            <div id="ui">
+                <h1 id="logo">TETRIS</h1>
+                <div id="score-container">
+                    <h2>Score <span id="score">0</span></h2>
+                </div>
+                <div>
+                    <h4>Instructions</h4>
+                    <ul>
+                        <li><code><i class='bx bxs-left-arrow-square'></i> <i class='bx bxs-down-arrow-square' ></i> <i class='bx bxs-right-arrow-square' ></i></code> to move</li>
+                        <li><code><i class='bx bxs-up-arrow-square'></i></code> instant drop</li>
+                        <li><code>SPACE</code> to rotate</li>
+                        <li><code>P</code> to pause</li>
+                    </ul>
+                    <br>
+                    <h4 class="mt">Option</h4>
+                    <div id="musicbtn" class="btn"><i class='bx bxs-music'></i> [M]usic <span class="musicstate">OFF</span></div>
+                    <div id="shadowbtn" class="btn"><i class='bx bx-crosshair'></i> [S]hadow <span class="shadowstate">OFF</span></div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/tile.js"></script>
+    <script src="js/piece.js"></script>
+    <script src="js/spiece.js"></script>
+    <script src="js/zpiece.js"></script>
+    <script src="js/ipiece.js"></script>
+    <script src="js/squarepiece.js"></script>
+    <script src="js/tpiece.js"></script>
+    <script src="js/lpiece.js"></script>
+    <script src="js/jpiece.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
